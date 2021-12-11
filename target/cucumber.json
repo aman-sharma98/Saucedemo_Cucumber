@@ -1,0 +1,381 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Open the login Page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 303172966,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User navigated to Swag Lab login page",
+            "match": {
+              "location": "Loginstepdefs.user_navigated_to_swag_lab_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-11T11:38:34.797Z",
+        "before": [
+          {
+            "result": {
+              "duration": 948801400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Baseclass.Setup()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Possitive Login Scenario",
+        "description": "",
+        "id": "login-feature-scenarios;possitive-login-scenario;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 68113272,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Baseclass.Teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 237966276,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enters username \"standard_user\" and password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 22
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 51
+                }
+              ],
+              "location": "Loginstepdefs.user_enters_username_something_and_password_something(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 138166122,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks on the Login Button",
+            "match": {
+              "location": "Loginstepdefs.user_clicks_on_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 436680,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User should be navigated on the product page",
+            "match": {
+              "location": "Loginstepdefs.user_should_be_navigated_on_the_product_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginFeature"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Open the login Page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 330885135,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User navigated to Swag Lab login page",
+            "match": {
+              "location": "Loginstepdefs.user_navigated_to_swag_lab_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-11T11:38:36.514Z",
+        "before": [
+          {
+            "result": {
+              "duration": 645415314,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Baseclass.Setup()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Negetive Login Scenario",
+        "description": "",
+        "id": "login-feature-scenarios;negetive-login-scenario;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 67353437,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Baseclass.Teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 236150250,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User enters username \"abcd@gmail.com\" and password \"Abcd@r123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abcd@gmail.com",
+                  "offset": 22
+                },
+                {
+                  "val": "Abcd@r123",
+                  "offset": 52
+                }
+              ],
+              "location": "Loginstepdefs.user_enters_username_something_and_password_something(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 72139436,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User clicks on the Login Button",
+            "match": {
+              "location": "Loginstepdefs.user_clicks_on_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 33479513,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User should be getting error \"Epic sadface: Username and password do not match any user in this service\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Epic sadface: Username and password do not match any user in this service",
+                  "offset": 30
+                }
+              ],
+              "location": "Loginstepdefs.user_should_be_getting_error_something(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@LoginFeature"
+          }
+        ]
+      }
+    ],
+    "name": "Login Feature Scenarios",
+    "description": "",
+    "id": "login-feature-scenarios",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/SauceLogin.feature",
+    "tags": [
+      {
+        "name": "@LoginFeature",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Open the login Page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 320921479,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User navigated to Swag Lab login page",
+            "match": {
+              "location": "Loginstepdefs.user_navigated_to_swag_lab_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-11T11:38:37.903Z",
+        "before": [
+          {
+            "result": {
+              "duration": 615705307,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Baseclass.Setup()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Add Product to the cart",
+        "description": "",
+        "id": "adding-product-scenario;add-product-to-the-cart;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 68468818,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Baseclass.Teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 216870196,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enters username \"standard_user\" and password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 22
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 51
+                }
+              ],
+              "location": "Loginstepdefs.user_enters_username_something_and_password_something(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 135188315,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User clicks on the Login Button",
+            "match": {
+              "location": "Loginstepdefs.user_clicks_on_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 180539615,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user adds the product to the cart \"Sauce Labs Backpack\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sauce Labs Backpack",
+                  "offset": 35
+                }
+              ],
+              "location": "Productstepdefs.user_adds_the_product_to_the_cart_something(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 44857332,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user can see the product added to the cart",
+            "match": {
+              "location": "Productstepdefs.user_can_see_the_product_added_to_the_cart()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ProductFeature"
+          }
+        ]
+      }
+    ],
+    "name": "Adding Product Scenario",
+    "description": "",
+    "id": "adding-product-scenario",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/SauceProduct.feature",
+    "tags": [
+      {
+        "name": "@ProductFeature",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
